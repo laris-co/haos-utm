@@ -47,6 +47,13 @@ just console       # serial terminal (root, no password, `ha` CLI)
 | Can't exit `screen` (`ctrl-c` goes to guest) | `ctrl-a d` / `ctrl-a k y` / `screen -X -S <id> quit` |
 | `utmctl delete` has no confirmation | recipe refuses without `--confirm` |
 
+## Give it to an agent
+
+[PROMPT.md](PROMPT.md) is a self-contained prompt for any shell-capable LLM
+agent: build one VM from this repo and return nine pieces of captured evidence
+(digest check, identity gate, port truth, serial `ha os info`, ...) — proof,
+not claims.
+
 ## Skill
 
 `.claude/skills/create-haos-utm/` makes this driveable by Claude Code — the
